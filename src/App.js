@@ -1,10 +1,7 @@
 import React from 'react';
-import { Header } from './components/ui/Header';
+
+import { AppRouter } from './routers/AppRouter';
 
 export const App = () => {
-  return (
-    <div>
-      <Header />
-    </div>
-  );
+  return <AppRouter />;
 };

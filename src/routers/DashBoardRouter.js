@@ -1,9 +1,7 @@
-import React from 'react';
-import { Redirect, Route, Switch } from 'react-router';
-import { CollectionsScreen } from '../components/pages/collections/CollectionsScreen';
-import { MenScreen } from '../components/pages/men/MenScreen';
-import { WomenScreen } from '../components/pages/women/WomenScreen';
-import { Header } from '../components/ui/Header';
+import React from "react";
+import { Redirect, Route, Switch } from "react-router";
+
+import { Header } from "../components/ui/Header";
 
 export const DashBoardRouter = () => {
   return (
@@ -12,12 +10,12 @@ export const DashBoardRouter = () => {
       <div>
         <Switch>
           {/* redirecciona al la ruta y renderiza el componente */}
-          <Route exact path='/collections' component={CollectionsScreen} />
-          <Route exact path='/men' component={MenScreen} />
-          <Route exact path='/women' component={WomenScreen} />
+          <Route exact path="/home" />
+          <Route exact path="/men" />
+          <Route exact path="/women" />
 
           {/* por defecto si no hay nada redireccionara a la ruta marvel */}
-          <Redirect to='/' />
+          <Redirect to="/home" />
         </Switch>
       </div>
     </>

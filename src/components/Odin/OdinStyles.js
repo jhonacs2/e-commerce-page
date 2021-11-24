@@ -10,7 +10,7 @@ export const OdinSection = styled.section`
   object-fit: contain;
 `;
 
-export const OdinVideo = styled.section`
+export const OdinVideo = styled.video`
   object-fit: cover;
   width: 100%;
   height: 100%;
@@ -37,9 +37,9 @@ export const ButtonWrapper = styled.div`
 `;
 
 export const OdinButton = styled(Button)`
-  color: black;
+  color: #fff9f7;
   &:before {
-    background: #fff;
+    background: #e1e3d4;
     height: 500%;
   }
 

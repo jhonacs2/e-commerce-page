@@ -12,10 +12,10 @@ import {
 export const Odin = () => {
   return (
     <OdinSection>
-      <OdinVideo src="./assets/odin.mp4" loop autoPlay muted />
+      <OdinVideo src="./assets/odin.mp4" autoPlay muted loop />
       <Container>
         <MainHeading>The Best Shop in Asgard </MainHeading>
-        <OdinText>We Provide The Best CLothes in The Galaxy</OdinText>
+        <OdinText>We Provide The Best Clothes in The Galaxy</OdinText>
         <ButtonWrapper>
           <Link to="">
             <OdinButton>Shop Now !</OdinButton>

@@ -1,9 +1,15 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { IconContext } from "react-icons";
 import { Heading, TextWrapper } from "../../globalStyles";
+import serviceClothes from "../../services/clothes";
 import { ClotheSection, ClothesgWrapper } from "./ClotheStyle";
 
 export const Women = () => {
+  const [women, setWomen] = useState([]);
+
+  useEffect(() => {
+    serviceClothes.getWomenClothes().then((data) => setWomen(data));
+  }, []);
   return (
     <IconContext.Provider value={{ color: "#ac8c35", size: "1rem" }}>
       <ClotheSection id="women">
